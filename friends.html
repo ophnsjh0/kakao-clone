@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
-
+    <link rel="stylesheet" href="css/styles.css" />
     <title>friends | Kakao Clone</title>
   </head>
   <body>
@@ -16,13 +16,14 @@
       <div class="status-bar_column">
         <span class="status-bar_clock">13:53</span>
       </div>
-      <div class="status-bar_column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-colme-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <i class="far fa-times-circle"></i>
-      <span class="status-bar_battery">100%</span>
-      <i class="fas fa-battery-full"></i>
+      <div class="status-bar_column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="far fa-times-circle"></i>
+        <span class="status-bar_battery">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
     </div>
     <header class="header">
       <div class="header__header_column">
@@ -40,34 +41,43 @@
     <main class="friends">
       <header class="friends__header">
         <div class="friends__friend friend friend--lg">
-          <img class="g-avatar friend__avatar" src="screenshot/shinbi.jpg" />
-          <div class="friend__content">
-            <span class="friend__name">Shinbi</span>
-            <span class="friend__status">Hello World~</span>
+          <div class="friends__column">
+            <img class="g-avatar friend__avatar" src="screenshot/shinbi.jpg" />
+            <div class="friend__content">
+              <span class="friend__name">Shinbi</span>
+              <span class="friend__status">Hello World~</span>
+            </div>
           </div>
         </div>
       </header>
       <div class="friends__plus">
-        <h5 class="friend__title">Plus Friend</h5>
+        <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend friend--lg">
-          <img class="g-avatar friend__avatar" src="screenshot/shinbi.jpg" />
-          <div class="friend__content">
-            <span class="friend__name">Plus Friend</span>
+          <div class="friends__column">
+            <img class="friend__avatar" src="screenshot/shinbi.jpg" />
+            <div class="friend__content">
+              <span class="friend__name">Plus Friend</span>
+            </div>
           </div>
+        </div>
       </div>
       <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5> 
+        <h5 class="friends__title">Friends 14</h5>
         <li class="friends__friend friend friend--lg">
           <div class="friends__column">
+            <img class="friend__avatar" src="screenshot/shinbi.jpg" />
             <div class="friend__content">
-            <img class="g-avatar friend__avatar" src="screenshot/shinbi.jpg" />
               <span class="friend__name">Shinbi</span>
               <span class="friend__status">Hello World~</span>
             </div>
           </div>
           <div class="friends__column">
-            <span class="friends__playlist">지독하게-FTISLAND</span>
-            <i class="fas fa-play"></i>
+            <div class="friends__playlist">
+              <span>
+                지독하게-FTISLAND
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
           </div>
         </li>
       </ul>
@@ -76,12 +86,13 @@
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="friends.html" class="nav__list-link">
-            <i class="icon-user"></i>
+            <i class="icon-user-o"></i>
           </a>
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
-            <i class="icon-comment-empty"></i>
+            <div class="nav__badge">8</div>
+            <i class="icon-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
@@ -96,6 +107,5 @@
         </li>
       </ul>
     </nav>
-    >
   </body>
 </html>

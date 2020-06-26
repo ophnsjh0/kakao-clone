@@ -8,26 +8,27 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
-
+    <link rel="stylesheet" href="css/styles.css" />
     <title>chat | Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar_column">
         <span class="status-bar_clock">13:53</span>
       </div>
-      <div class="status-bar_column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-colme-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <i class="far fa-times-circle"></i>
-      <span class="status-bar_battery">100%</span>
-      <i class="fas fa-battery-full"></i>
+      <div class="status-bar_column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="far fa-times-circle"></i>
+        <span class="status-bar_battery">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
     </div>
     <header class="header">
       <div class="header__header_column">
         <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left fa-2x"></i>
+          <i class="fas fa-arrow-left fa"></i>
         </a>
         <h1 class="header__title">Shinbi.</h1>
       </div>
@@ -40,11 +41,11 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__message">
         <span class="chat__timestamp">Friday, January 11,2019</span>
         <li class="incoming-message message">
-          <img class="g-avatar message__avatar" src="screenshot/shinbi.jpg" />
+          <img class="m-avartar message__avatar" src="screenshot/shinbi.jpg" />
           <div class="message__content">
             <span class="message__author">Shinbi</span>
             <div class="message__bubble">

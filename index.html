@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
-
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
@@ -16,13 +16,14 @@
       <div class="status-bar_column">
         <span class="status-bar_clock">13:53</span>
       </div>
-      <div class="status-bar_column"></div>
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-colme-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <i class="far fa-times-circle"></i>
-      <span class="status-bar_battery">100%</span>
-      <i class="fas fa-battery-full"></i>
+      <div class="status-bar_column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="far fa-times-circle"></i>
+        <span class="status-bar_battery">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
     </div>
     <header class="header">
       <div class="header__header_column">
@@ -42,19 +43,25 @@
     </header>
     <main class="chats">
       <ul class="chats-list">
-        <li class="chats-chat">
-          <div class="chat__column">
-            <a href="chat.html">
-              <img class="chat__avatar" src="screenshot/shinbi.jpg" />
-            </a>
-            <div class="chat__content">
-              <span class="chat__username">Shinbi</span>
-              <span class="chat_preview">Hello world~!!</span>
+        <li class="chats__chat chats ">
+          <a href="chat.html">
+            <div class="chats__chat friend friend--lg">
+              <div class="friends__column">
+                <img
+                  class="m-avatar friend__avatar"
+                  src="screenshot/shinbi.jpg"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">Shinbi</span>
+                  <span class="friend__bottom-text">Hello World~</span>
+                </div>
+              </div>
+
+              <div class="friends__column">
+                <span class="chat__timestamp">yesterday</span>
+              </div>
             </div>
-          </div>
-          <div class="chat__column">
-            <span class="chat__timestamp">어제</span>
-          </div>
+          </a>
         </li>
       </ul>
     </main>
@@ -67,6 +74,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="icon-comment"></i>
           </a>
         </li>
@@ -82,6 +90,5 @@
         </li>
       </ul>
     </nav>
-    >
   </body>
 </html>

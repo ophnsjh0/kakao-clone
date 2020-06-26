@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
-
+    <link rel="stylesheet" href="css/styles.css" />
     <title>more | Kakao Clone</title>
   </head>
   <body>
@@ -16,13 +16,14 @@
       <div class="status-bar_column">
         <span class="status-bar_clock">13:53</span>
       </div>
-      <div class="status-bar_column"></div>
+      <div class="status-bar_column">
       <i class="fas fa-clock"></i>
-      <i class="fas fa-colme-mute"></i>
+      <i class="fas fa-volume-mute"></i>
       <i class="fas fa-wifi"></i>
       <i class="far fa-times-circle"></i>
       <span class="status-bar_battery">100%</span>
       <i class="fas fa-battery-full"></i>
+    </div>
     </div>
     <header class="header">
       <div class="header__header_column">
@@ -45,13 +46,15 @@
     <main class="more">
       <header class="friends__header">
         <div class="friends__friend friend friend--lg">
+          <div class="friends__column">
           <img class="g-avatar friend__avatar" src="screenshot/shinbi.jpg" />
           <div class="friend__content">
             <span class="friend__name">Shinbi</span>
             <span class="friend__status">Hello World~</span>
           </div>
+        </div>
           <div class="friend_file">
-            <i class="fas fa-file-alt"></i>
+            <i class="fas fa-file-alt fa-2x"></i>
           </div>
         </div>
         <ul class="more__list">
@@ -75,23 +78,23 @@
           </li>
       </header>
       <section class="more__suggestions">
+        <h5 class="more__suggestion-title">Suggestions</h5>
         <ul class="more__suggestions-list">
-          <h5 class="more__suggestion-title">Suggestions</h5>
           <li class="more__suggestion suggestion">
             <span class="suggestion__btn">
-                <i class="fas fa-quote-right fa-2x"></i>
+                <i class="fas fa-quote-right "></i>
             </span>
             <span class="suggestion__title">Kakao Story</span>
           </li>
           <li class="more__suggestion suggestion">
             <span class="suggestion__btn">
-                <i class="fas fa-beer fa-2x"></i>
+                <i class="fas fa-beer "></i>
             </span>
             <span class="suggestion__title">Kakao friends</span>
           </li>
           <li class="more__suggestion suggestion">
             <span class="suggestion__btn">
-                <i class="fas fa-gamepad fa-2x"></i>
+                <i class="fas fa-gamepad "></i>
             </span>
             <span class="suggestion__title">Kakao Gem</span>
           </li>
@@ -107,7 +110,8 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
-            <i class="icon-comment-empty"></i>
+            <div class="nav__badge">8</div>
+            <i class="icon-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
@@ -122,6 +126,5 @@
         </li>
       </ul>
     </nav>
-    >
   </body>
 </html>
