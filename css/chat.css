@@ -144,11 +144,13 @@
 .incoming-message {
   align-self: flex-start;
   margin-right: 15px;
+  animation: inani 0.5s ease-in;
 }
 
 .sent-message {
   align-self: flex-end;
   margin-left: 15px;
+  animation: sentani 0.5s ease-out;
 }
 
 @keyframes spin {
@@ -198,10 +200,6 @@
   font-size: 13px;
 }
 
-.incoming-message {
-  animation: inani 0.5s ease-in forwards;
-}
-
 @keyframes inani {
   0% {
     opacity: 0;
@@ -211,10 +209,6 @@
     opacity: 1;
     transform: none;
   }
-}
-
-.sent-message {
-  animation: sentani 0.5s ease-out forwards;
 }
 
 @keyframes sentani {
