@@ -1,4 +1,4 @@
-.bigscreen {
+/* .bigscreen {
   display: flex;
   justify-self: center;
   align-items: center;
@@ -14,10 +14,10 @@
   line-height: 1.5;
   display: none;
   z-index: 4;
-}
+} */
 
-@media screen and (min-width: 550px) {
+/* @media screen and (min-width: 550px) {
   .bigscreen {
     display: flex;
   }
-}
+} */
